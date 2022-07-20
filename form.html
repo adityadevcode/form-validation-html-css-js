@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form validation</title>
+    <!-- google font icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style.css">  
 </head>
 <body>
+    <!-- oka division lo form antha rayali anukuntuna -->
     <div class="container">
+        <!--  -->
         <div class="header">
             <h2>Register Here</h2>
         </div>
-        <form action="index.html" class="form" id="form">
-            <div class="field">
+        <!-- form ni use cheyali ante form tag use cheyali -->
+        <!-- form lo data antha correct ga vunte backend velthundi manamu action lo mention chestham! response ekadiki velthundi-->
+        <form action="form.html" class="form" id="form">
+           <!-- form lo okaka feild add chesthunam -->
+           <!-- username ki related idi antha diniki division tisukuna class lo field ani chanu -->
+           <div class="field">
                 <label >Username</label>
+                <!-- user form lo em value ichado form lo js lo access cheyali ante id dwara unique ga acess cheyachu -->
                 <input type="text" placeholder="xyz" id="uname">
+              <!--google font icons ki sambhadina things  -->
                 <span class="material-icons success"> check_circle</span>
                 <span class="material-icons error ">error</span>
+                <!-- e classes tho js lo code rasthunam  -->
                 <small>Error message</small>
             </div>
+            <!-- eamil related thing!id different ga ichanu (email) -->
             <div class="field ">
                 <label>Email</label>
                 <input type="email" placeholder="abc@gmail.com" id="email">
@@ -47,6 +58,7 @@
                 <label>I agree to terms and conditions</label>               
                 <small>Error message</small>
             </div>
+            <!-- submit button -->
             <input type="submit" class="button">
         </form>
     </div>
